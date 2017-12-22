@@ -10,7 +10,7 @@
       </div>
       <div class="bar-item act" @click="tabTo('class')">
           <text class="bar-ic iconfont">&#xe605;</text>
-          <text class="bat-txt">分类</text>
+            <text class="bar-txt">分类</text>
       </div>
       <div class="bar-item" @click="tabTo('shop')">
             <text class="bar-ic iconfont">&#xe61a;</text>
