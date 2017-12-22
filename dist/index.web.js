@@ -1170,13 +1170,17 @@ module.exports = Component.exports
 /* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
+
+/* styles */
+__webpack_require__(94)
+
 var Component = __webpack_require__(0)(
   /* script */
-  null,
+  __webpack_require__(91),
   /* template */
   __webpack_require__(29),
   /* scopeId */
-  null,
+  "data-v-4c23933a",
   /* cssModules */
   null
 )
@@ -1242,13 +1246,17 @@ module.exports = Component.exports
 /* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
+
+/* styles */
+__webpack_require__(105)
+
 var Component = __webpack_require__(0)(
   /* script */
-  null,
+  __webpack_require__(102),
   /* template */
   __webpack_require__(28),
   /* scopeId */
-  null,
+  "data-v-3934e65e",
   /* cssModules */
   null
 )
@@ -1276,13 +1284,17 @@ module.exports = Component.exports
 /* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
+
+/* styles */
+__webpack_require__(101)
+
 var Component = __webpack_require__(0)(
   /* script */
-  null,
+  __webpack_require__(99),
   /* template */
   __webpack_require__(24),
   /* scopeId */
-  null,
+  "data-v-0aad944a",
   /* cssModules */
   null
 )
@@ -1422,7 +1434,43 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._v("home")])
+  return _c('div', {
+    class: ['wrapper', _vm.isIpx && _vm.isIpx() ? 'w-ipx' : '']
+  }, [_c('header4', {
+    attrs: {
+      "title": "购物车",
+      "rightBtn": _vm.rightBtn
+    }
+  }), _vm._v(" "), _c('div', {
+    staticClass: "slogan"
+  }, [_c('text', {
+    staticClass: "i-slg iconfont"
+  }, [_vm._v(" 30天无忧退换货")]), _vm._v(" "), _c('text', {
+    staticClass: "i-slg iconfont"
+  }, [_vm._v(" 48小时快速退款")]), _vm._v(" "), _c('text', {
+    staticClass: "i-slg iconfont"
+  }, [_vm._v(" 满88元免邮费")])]), _vm._v(" "), _c('scroller', {
+    staticClass: "main-list",
+    attrs: {
+      "offset-accuracy": "300px"
+    }
+  }, [_c('refresher'), _vm._v(" "), _c('div', {
+    staticClass: "shop-cart"
+  }, [(!_vm.goodList || _vm.goodList.length <= 0) ? _c('div', {
+    staticClass: "cart-empty"
+  }, [_c('image', {
+    staticClass: "img-empty",
+    attrs: {
+      "resize": "contain",
+      "src": "http://yanxuan.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/noCart-a8fe3f12e5.png"
+    }
+  }), _vm._v(" "), _c('text', {
+    staticClass: "txt-empty"
+  }, [_vm._v("去添加点什么吧")])]) : _vm._e()]), _vm._v(" "), _c('block-3', {
+    attrs: {
+      "goods": _vm.goods3
+    }
+  })], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -1595,7 +1643,183 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._v("home")])
+  return _c('div', {
+    staticClass: "wrapper"
+  }, [_c('header5'), _vm._v(" "), _c('div', {
+    class: ['header', _vm.isIpx && _vm.isIpx() ? 'h-ipx' : ''],
+    on: {
+      "click": function($event) {
+        _vm.jumpWeb('http://m.you.163.com/ucenter')
+      }
+    }
+  }, [_c('image', {
+    staticClass: "header-bg",
+    attrs: {
+      "resize": "cover",
+      "src": "http://yanxuan.nosdn.127.net/6ae93353e95b3450a2710bb43f925a63.jpg"
+    }
+  }), _vm._v(" "), _c('image', {
+    staticClass: "i-photo",
+    attrs: {
+      "resize": "cover",
+      "src": "http://yanxuan.nosdn.127.net/885e3901d0a3501362530435d76bebb3.jpg"
+    }
+  }), _vm._v(" "), _c('text', {
+    staticClass: "i-name"
+  }, [_vm._v("zwwill7")]), _vm._v(" "), _c('div', {
+    staticClass: "b-tlt"
+  }, [_c('image', {
+    staticClass: "i-tag tag-e",
+    attrs: {
+      "resize": "contain",
+      "src": "http://yanxuan.nosdn.127.net/3dc6e876620bb84a5dac3deb6ecd4916.png"
+    }
+  }), _vm._v(" "), _c('text', {
+    staticClass: "i-tag tag-v8 iconfont"
+  }, [_vm._v("")]), _vm._v(" "), _c('text', {
+    staticClass: "txt-tag"
+  }, [_vm._v("品质生活家")])]), _vm._v(" "), _c('text', {
+    staticClass: "b-qrcode iconfont"
+  }, [_vm._v("")])]), _vm._v(" "), _c('div', {
+    staticClass: "s-box cell-button"
+  }, [_c('div', {
+    staticClass: "box-tlt border-bottom"
+  }, [_c('text', {
+    staticClass: "box-txt"
+  }, [_vm._v("我的订单")]), _c('text', {
+    staticClass: "i-box-in iconfont"
+  }, [_vm._v("")])]), _vm._v(" "), _c('div', {
+    staticClass: "box-line"
+  }, [_c('div', {
+    staticClass: "i-box-l"
+  }, [_c('text', {
+    staticClass: "i-box-icon iconfont"
+  }, [_vm._v("")]), _vm._v(" "), _c('text', {
+    staticClass: "i-box-tlt"
+  }, [_vm._v("待付款")])]), _vm._v(" "), _c('div', {
+    staticClass: "i-box-l"
+  }, [_c('text', {
+    staticClass: "i-box-icon iconfont"
+  }, [_vm._v("")]), _vm._v(" "), _c('text', {
+    staticClass: "i-box-tlt"
+  }, [_vm._v("待发货")])]), _vm._v(" "), _c('div', {
+    staticClass: "i-box-l"
+  }, [_c('text', {
+    staticClass: "i-box-icon iconfont"
+  }, [_vm._v("")]), _vm._v(" "), _c('text', {
+    staticClass: "i-box-tlt"
+  }, [_vm._v("已发货")])]), _vm._v(" "), _c('div', {
+    staticClass: "i-box-l"
+  }, [_c('text', {
+    staticClass: "i-box-icon iconfont"
+  }, [_vm._v("")]), _vm._v(" "), _c('text', {
+    staticClass: "i-box-tlt"
+  }, [_vm._v("待评价")])]), _vm._v(" "), _c('div', {
+    staticClass: "i-box-l"
+  }, [_c('text', {
+    staticClass: "i-box-icon iconfont"
+  }, [_vm._v("")]), _vm._v(" "), _c('text', {
+    staticClass: "i-box-tlt"
+  }, [_vm._v("退换/售后")])])])]), _vm._v(" "), _c('div', {
+    staticClass: "s-box"
+  }, [_c('div', {
+    staticClass: "box-tlt border-bottom"
+  }, [_c('text', {
+    staticClass: "box-txt"
+  }, [_vm._v("我的服务")])]), _vm._v(" "), _c('div', {
+    staticClass: "box-line line-serve border-bottom",
+    on: {
+      "click": function($event) {
+        _vm.jumpWeb('https://id.163.com/gj/m/')
+      }
+    }
+  }, [_c('div', {
+    staticClass: "i-box-l"
+  }, [_c('text', {
+    staticClass: "i-box-icon iconfont i-c-orange"
+  }, [_vm._v("")]), _c('text', {
+    staticClass: "i-box-tlt"
+  }, [_vm._v("拼团订单")])]), _vm._v(" "), _c('div', {
+    staticClass: "i-box-l"
+  }, [_c('text', {
+    staticClass: "i-box-icon iconfont i-c-yellow"
+  }, [_vm._v("")]), _c('text', {
+    staticClass: "i-box-tlt"
+  }, [_vm._v("邀请好友")])]), _vm._v(" "), _c('div', {
+    staticClass: "i-box-l"
+  }, [_c('text', {
+    staticClass: "i-box-icon iconfont i-c-orange"
+  }, [_vm._v("")]), _c('text', {
+    staticClass: "i-box-tlt"
+  }, [_vm._v("优惠券")])]), _vm._v(" "), _c('div', {
+    staticClass: "i-box-l"
+  }, [_c('text', {
+    staticClass: "i-box-icon iconfont i-c-yellow"
+  }, [_vm._v("")]), _c('text', {
+    staticClass: "i-box-tlt"
+  }, [_vm._v("优先购")])])]), _vm._v(" "), _c('div', {
+    staticClass: "box-line line-serve border-bottom",
+    on: {
+      "click": function($event) {
+        _vm.jumpWeb('https://gj.reg.163.com/faq/')
+      }
+    }
+  }, [_c('div', {
+    staticClass: "i-box-l"
+  }, [_c('text', {
+    staticClass: "i-box-icon iconfont i-c-orange"
+  }, [_vm._v("")]), _c('text', {
+    staticClass: "i-box-tlt"
+  }, [_vm._v("礼品卡")])]), _vm._v(" "), _c('div', {
+    staticClass: "i-box-l"
+  }, [_c('text', {
+    staticClass: "i-box-icon iconfont i-c-yellow"
+  }, [_vm._v("")]), _c('text', {
+    staticClass: "i-box-tlt"
+  }, [_vm._v("会员")])]), _vm._v(" "), _c('div', {
+    staticClass: "i-box-l"
+  }, [_c('text', {
+    staticClass: "i-box-icon iconfont i-c-orange"
+  }, [_vm._v("")]), _c('text', {
+    staticClass: "i-box-tlt"
+  }, [_vm._v("足迹")])]), _vm._v(" "), _c('div', {
+    staticClass: "i-box-l"
+  }, [_c('text', {
+    staticClass: "i-box-icon iconfont i-c-yellow"
+  }, [_vm._v("")]), _c('text', {
+    staticClass: "i-box-tlt"
+  }, [_vm._v("收藏")])])]), _vm._v(" "), _c('div', {
+    staticClass: "box-line line-serve",
+    on: {
+      "click": function($event) {
+        _vm.jumpWeb('http%3A%2F%2Fm.you.163.com%2Fhelp%23%2F%3F_k%3Dyn4ucc')
+      }
+    }
+  }, [_c('div', {
+    staticClass: "i-box-l"
+  }, [_c('text', {
+    staticClass: "i-box-icon iconfont i-c-blue"
+  }, [_vm._v("")]), _c('text', {
+    staticClass: "i-box-tlt"
+  }, [_vm._v("地址")])]), _vm._v(" "), _c('div', {
+    staticClass: "i-box-l"
+  }, [_c('text', {
+    staticClass: "i-box-icon iconfont i-c-blue"
+  }, [_vm._v("")]), _c('text', {
+    staticClass: "i-box-tlt"
+  }, [_vm._v("客服")])]), _vm._v(" "), _c('div', {
+    staticClass: "i-box-l"
+  }, [_c('text', {
+    staticClass: "i-box-icon iconfont i-c-blue"
+  }, [_vm._v("")]), _c('text', {
+    staticClass: "i-box-tlt"
+  }, [_vm._v("帮助")])]), _vm._v(" "), _c('div', {
+    staticClass: "i-box-l"
+  }, [_c('text', {
+    staticClass: "i-box-icon iconfont i-c-blue"
+  }, [_vm._v("")]), _c('text', {
+    staticClass: "i-box-tlt"
+  }, [_vm._v("设置")])])])])], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -1610,7 +1834,54 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._v("home")])
+  return _c('div', {
+    class: ['wrapper', _vm.isIpx && _vm.isIpx() ? 'w-ipx' : '']
+  }, [_c('header3'), _vm._v(" "), _c('div', {
+    staticClass: "class-list"
+  }, [_c('scroller', _vm._l((_vm.classes), function(i) {
+    return _c('text', {
+      staticClass: "class-txt"
+    }, [_vm._v(_vm._s(i))])
+  }))], 1), _vm._v(" "), _c('scroller', {
+    staticClass: "main-list",
+    attrs: {
+      "offset-accuracy": "300px"
+    }
+  }, [_c('refresh', {
+    staticClass: "refresh",
+    attrs: {
+      "display": "hide"
+    }
+  }, [_c('text', {
+    staticClass: "indicator"
+  }, [_vm._v("Refreshing ... ")])]), _vm._v(" "), _c('image', {
+    staticClass: "ad-img",
+    attrs: {
+      "resize": "cover",
+      "src": "http://yanxuan.nosdn.127.net/3ebd7addcc0d101d116052a57cec2f16.png"
+    }
+  }), _vm._v(" "), _c('text', {
+    staticClass: "sub-tlt"
+  }, [_vm._v(" --- 推荐区分类 --- ")]), _vm._v(" "), _c('div', {
+    staticClass: "sub-box"
+  }, _vm._l((_vm.subclasses), function(i) {
+    return _c('div', {
+      staticClass: "sub-i",
+      on: {
+        "click": function($event) {
+          _vm.jumpWeb('http%3A%2F%2Fm.you.163.com%2Fitem%2Flist%3FcategoryId%3D1022001%26subCategoryId%3D1040031')
+        }
+      }
+    }, [_c('image', {
+      staticClass: "i-img",
+      attrs: {
+        "resize": "contain",
+        "src": i.img
+      }
+    }), _vm._v(" "), _c('text', {
+      staticClass: "i-name"
+    }, [_vm._v(_vm._s(i.name))])])
+  }))], 1)], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -6263,6 +6534,560 @@ if(false) {
  if(!content.locals) {
    module.hot.accept("!!../../../node_modules/_css-loader@0.26.4@css-loader/index.js!../../../node_modules/_vue-loader@10.3.0@vue-loader/lib/style-rewriter.js?id=data-v-6a225268&scoped=true!../../../node_modules/_vue-loader@10.3.0@vue-loader/lib/selector.js?type=styles&index=0!./Block4.vue", function() {
      var newContent = require("!!../../../node_modules/_css-loader@0.26.4@css-loader/index.js!../../../node_modules/_vue-loader@10.3.0@vue-loader/lib/style-rewriter.js?id=data-v-6a225268&scoped=true!../../../node_modules/_vue-loader@10.3.0@vue-loader/lib/selector.js?type=styles&index=0!./Block4.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 91 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__util__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_refresh_vue__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_refresh_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_refresh_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Header3_vue__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Header3_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_Header3_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+var navigator = weex.requireModule('navigator');
+/* harmony default export */ __webpack_exports__["default"] = ({
+    components: {
+        'refresher': __WEBPACK_IMPORTED_MODULE_1__components_refresh_vue___default.a,
+        'header3': __WEBPACK_IMPORTED_MODULE_2__components_Header3_vue___default.a
+    },
+    data() {
+        return {
+            classes: ['推荐区', '家装区', '居家', '餐厨', '配件', '服装', '电器', '洗护', '杂货', '饮食', '婴童', '志趣'],
+            subclasses: [{ name: '中秋系列', img: 'http://yanxuan.nosdn.127.net/82ae05c313b93355239ca1795917a5ac.png?imageView&quality=85&thumbnail=144x144' }, { name: '超值套装', img: 'http://yanxuan.nosdn.127.net/bd6f7deba69c8af2f6bb80025d7b98de.png?imageView&quality=85&thumbnail=144x144' }, { name: '热卖爆品', img: 'http://yanxuan.nosdn.127.net/c3418cc60d3968263c5b2ac7fb153c34.png?imageView&quality=85&thumbnail=144x144' }, { name: '999+好评', img: 'http://yanxuan.nosdn.127.net/87d1cb1bc196c5775b17788aea1c2239.png?imageView&quality=85&thumbnail=144x144' }, { name: 'boss推荐', img: 'http://yanxuan.nosdn.127.net/fbee769af73c0f63f6120eb27ff3ce96.png?imageView&quality=85&thumbnail=144x144' }, { name: '明星推荐', img: 'http://yanxuan.nosdn.127.net/7dea8f7e0e706804c3307504e2e7c463.png?imageView&quality=85&thumbnail=144x144' }, { name: '黑凤梨系列', img: 'http://yanxuan.nosdn.127.net/a4a14669ce1fa497aece9a20c669196e.png?imageView&quality=85&thumbnail=144x144' }, { name: '趣味粉系列', img: 'http://yanxuan.nosdn.127.net/87fc01e5876482d521ecca13aea42653.png?imageView&quality=85&thumbnail=144x144' }]
+        };
+    },
+    methods: {
+        jumpWeb(_url) {
+            const url = this.$getConfig().bundleUrl;
+            navigator.push({
+                url: __WEBPACK_IMPORTED_MODULE_0__util__["a" /* default */].setBundleUrl(url, 'page/webview.js?weburl=' + _url),
+                animated: "true"
+            });
+        }
+    }
+});
+
+/***/ }),
+/* 92 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)();
+// imports
+
+
+// module
+exports.push([module.i, "\n.iconfont[data-v-4c23933a] {\n    font-family:iconfont;\n}\n.wrapper[data-v-4c23933a]{\n    background-color: #f4f4f4;\n    display: flex;\n    flex-wrap: nowrap;\n    flex-direction: row;\n    margin-top: 40px;\n    margin-bottom: 34px;\n}\n.w-ipx[data-v-4c23933a]{\n    margin-top: 40px;\n    margin-bottom: 34px;\n}\n.class-list[data-v-4c23933a]{\n    width: 162px;\n    margin-top: 113px;\n    margin-bottom: 90px;\n    padding-top: 20px;\n    border-right-width: 1px;\n    border-right-color: #d9d9d9;\n    background-color: #fff;\n}\n.class-txt[data-v-4c23933a]{\n    font-size: 28px;\n    margin-top: 22px;\n    margin-bottom: 26px;\n    margin-left: 10px;\n    margin-right: 10px;\n    text-align: center;\n    color:#333;\n}\n.main-list[data-v-4c23933a]{\n    flex: 1;\n    display: flex;\n    flex-direction: column;\n    flex-wrap: nowrap;\n    margin-top: 113px;\n    margin-bottom: 90px;\n    background-color: #fff;\n}\n.ad-img[data-v-4c23933a]{\n    width: 532px;\n    height: 194px;\n    border-radius: 6px;\n    margin: 28px;\n}\n.sub-tlt[data-v-4c23933a]{\n    text-align: center;\n    font-size: 24px;\n    color:#333;\n    margin-top: 10px;\n    margin-bottom: 30px;\n}\n.sub-box[data-v-4c23933a]{\n    padding-left: 26px;\n    display: flex;\n    flex-direction: row;\n    flex-wrap: wrap;\n}\n.sub-i[data-v-4c23933a]{\n    width: 178px;\n    height: 200px;\n}\n.i-img[data-v-4c23933a]{\n    width: 150px;\n    margin-left: 14px;\n    margin-right: 14px;\n    height: 150px;\n}\n.i-name[data-v-4c23933a]{\n    font-size: 22px;\n    text-align: center;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 93 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/* styles */
+__webpack_require__(98)
+
+var Component = __webpack_require__(0)(
+  /* script */
+  __webpack_require__(95),
+  /* template */
+  __webpack_require__(97),
+  /* scopeId */
+  "data-v-4a13ebde",
+  /* cssModules */
+  null
+)
+Component.options.__file = "/Users/steven/Desktop/git/weex-yanxuan/src/assets/components/Header3.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] Header3.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-4a13ebde", Component.options)
+  } else {
+    hotAPI.reload("data-v-4a13ebde", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 94 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(92);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("648e696d", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/_css-loader@0.26.4@css-loader/index.js!../../../node_modules/_vue-loader@10.3.0@vue-loader/lib/style-rewriter.js?id=data-v-4c23933a&scoped=true!../../../node_modules/_vue-loader@10.3.0@vue-loader/lib/selector.js?type=styles&index=0!./class.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.26.4@css-loader/index.js!../../../node_modules/_vue-loader@10.3.0@vue-loader/lib/style-rewriter.js?id=data-v-4c23933a&scoped=true!../../../node_modules/_vue-loader@10.3.0@vue-loader/lib/selector.js?type=styles&index=0!./class.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 95 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data() {
+        return {};
+    },
+    created() {},
+    methods: {}
+});
+
+/***/ }),
+/* 96 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)();
+// imports
+
+
+// module
+exports.push([module.i, "\n.iconfont[data-v-4a13ebde] {\n    font-family:iconfont;\n}\n.wrapper[data-v-4a13ebde]{\n    position: fixed;\n    top: 0;\n    left: 0;right: 0;\n    height: 114px;\n    padding-top: 44px;\n    display:flex;\n    flex-wrap: nowrap;\n    flex-direction: row;\n    justify-content: space-around;\n    z-index: 101;\n    background-color: #fafafa;\n    opacity: .99;\n    border-bottom-width: 1px;\n    border-bottom-color: #d9d9d9;\n}\n.w-ipx[data-v-4a13ebde]{\n    height: 154px;\n    padding-top: 84px;\n}\n.search[data-v-4a13ebde] {\n    flex: 1;\n    height: 60px;\n    font-size: 26px;\n    padding-top: 13px;\n    background-color: #ededed;\n    border-radius: 8px;\n    margin-right: 26px;\n    margin-left: 26px;\n    text-align: center;\n    color:#666;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 97 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    class: ['wrapper', _vm.isIpx && _vm.isIpx() ? 'w-ipx' : '']
+  }, [_c('text', {
+    staticClass: "search iconfont"
+  }, [_vm._v(" 搜索商品，共8888款好物")])])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-4a13ebde", module.exports)
+  }
+}
+
+/***/ }),
+/* 98 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(96);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("1c80380a", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/_css-loader@0.26.4@css-loader/index.js!../../../node_modules/_vue-loader@10.3.0@vue-loader/lib/style-rewriter.js?id=data-v-4a13ebde&scoped=true!../../../node_modules/_vue-loader@10.3.0@vue-loader/lib/selector.js?type=styles&index=0!./Header3.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.26.4@css-loader/index.js!../../../node_modules/_vue-loader@10.3.0@vue-loader/lib/style-rewriter.js?id=data-v-4a13ebde&scoped=true!../../../node_modules/_vue-loader@10.3.0@vue-loader/lib/selector.js?type=styles&index=0!./Header3.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 99 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Header2_vue__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Header2_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_Header2_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Block3_vue__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Block3_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_Block3_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_refresh_vue__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_refresh_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_refresh_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    components: {
+        'header4': __WEBPACK_IMPORTED_MODULE_0__components_Header2_vue___default.a,
+        'refresher': __WEBPACK_IMPORTED_MODULE_3__components_refresh_vue___default.a,
+        'block-3': __WEBPACK_IMPORTED_MODULE_1__components_Block3_vue___default.a
+    },
+    data() {
+        return {
+            rightBtn: {
+                name: "编辑"
+            },
+            goods3: [{ tlt: "日式和风敞口保温杯", img: "http://yanxuan.nosdn.127.net/3aa67fee1c7d046a09f4ce878f4485ac.png?imageView&quality=85&thumbnail=330x330", info: "真空隔热，保温保冷", price: "32" }, { tlt: "切尔西牛皮女靴", img: "http://yanxuan.nosdn.127.net/0e9ddf1a0ed5af78e8ec12cb9489df17.png?imageView&quality=85&thumbnail=330x330", info: "经典牛皮切尔西，时尚帅气", price: "289" }, { tlt: "小馒头 多色双肩包", img: "http://yanxuan.nosdn.127.net/455eee1712358dbcb2e33d54ab287808.png?imageView&quality=85&thumbnail=330x330", info: "奶油色泽，小巧减龄", price: "79" }, { tlt: "全棉色织磨毛四件套", img: "http://yanxuan.nosdn.127.net/3e1c00ce7b49a78e645538a8c45cabcb.png?imageView&quality=85&thumbnail=330x330", info: "优雅色织，温暖磨毛", price: "299" }, { tlt: "日式和风声波式电动牙刷", img: "http://yanxuan.nosdn.127.net/e5474a8f4fd5748079e2ba2ead806b51.png?imageView&quality=85&thumbnail=330x330", info: "进口刷毛，专利技术", price: "119" }, { tlt: "多功能商务双肩包", img: "http://yanxuan.nosdn.127.net/795884dc6d995eca9a091a6358e3634d.png?imageView&quality=85&thumbnail=330x330", info: "17个功能分区，内置分层收纳", price: "334" }, { tlt: "黑凤梨 20寸PC膜拉链登机箱", img: "http://yanxuan.nosdn.127.net/3108aaae80416b1cf27c3d7cc5661cea.png?imageView&quality=85&thumbnail=330x330", info: "热卖9万只，网易人手1只", price: "185" }, { tlt: "日式蓬软太鼓抱枕", img: "http://yanxuan.nosdn.127.net/ad953e16ad8c33b714e7af941ce8cd56.png?imageView&quality=85&thumbnail=330x330", info: "萌趣太鼓造型 软糯轻柔回弹", price: "29" }, { tlt: "可水洗抗菌防螨丝羽绒枕", img: "http://yanxuan.nosdn.127.net/a6c9e142fd008b3734c690a71a78ae5b.png?imageView&quality=85&thumbnail=330x330", info: "进口防螨布，热销50万件", price: "99" }, { tlt: "双宫茧桑蚕丝被 空调被", img: "http://yanxuan.nosdn.127.net/6b341648f59d0c3eb48fa81e1d2de06e.png?imageView&quality=85&thumbnail=330x330", info: "一级桑蚕丝，吸湿透气柔软", price: "479" }, { tlt: "怀抱休闲椅组合（皮款）", img: "http://yanxuan.nosdn.127.net/b5289125e9b55cf72e9a9623d006415e.png?imageView&quality=85&thumbnail=330x330", info: "葛优躺神器皮款", price: "3999" }, { tlt: "欧式哑光餐具套装", img: "http://yanxuan.nosdn.127.net/431e86c88b4a6c9f065d1d8abea6b603.png?imageView&quality=85&thumbnail=330x330", info: "德化白瓷，坚实耐用", price: "189" }, { tlt: "清新两用杯", img: "http://yanxuan.nosdn.127.net/431f5d142e3dd9946dc8e38c2aa3cd34.png?imageView&quality=85&thumbnail=330x330", info: "办公杯优选 轻松饮茶", price: "52" }, { tlt: "两带式男/女款拖鞋", img: "http://yanxuan.nosdn.127.net/7d1c130c7d80edf824e4218c6829b7c8.png?imageView&quality=85&thumbnail=330x330", info: "鞋杯随脚型而变，舒适呵护", price: "69.9" }],
+            goodList: []
+        };
+    },
+
+    methods: {}
+});
+
+/***/ }),
+/* 100 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)();
+// imports
+
+
+// module
+exports.push([module.i, "\n.iconfont[data-v-0aad944a] {\n    font-family:iconfont;\n}\n.wrapper[data-v-0aad944a]{\n    background-color: #f4f4f4;\n}\n.w-ipx[data-v-0aad944a]{\n    margin-top: 40px;\n}\n.main-list[data-v-0aad944a]{\n    margin-top: 170px;\n    margin-bottom: 90px;\n}\n.slogan[data-v-0aad944a]{\n    position: absolute;\n    top:110px;\n    width: 750px;\n    display: flex;\n    flex-direction: row;\n    flex-wrap: nowrap;\n}\n.i-slg[data-v-0aad944a]{\n    height: 66px;\n    font-size: 26px;\n    padding-top: 16px;\n    flex: 1;\n    text-align: center;\n    color: #b4282d;\n}\n.shop-cart[data-v-0aad944a]{\n}\n.cart-empty[data-v-0aad944a]{\n    height: 350px;\n}\n.img-empty[data-v-0aad944a]{\n    position: absolute;\n    width: 750px;\n    height: 230px;\n    top:20px;\n    left: 0;\n}\n.txt-empty[data-v-0aad944a]{\n    position: absolute;\n    text-align: center;\n    font-size: 30px;\n    width: 750px;\n    top:250px;\n    color:#999;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 101 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(100);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("e4c81146", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/_css-loader@0.26.4@css-loader/index.js!../../../node_modules/_vue-loader@10.3.0@vue-loader/lib/style-rewriter.js?id=data-v-0aad944a&scoped=true!../../../node_modules/_vue-loader@10.3.0@vue-loader/lib/selector.js?type=styles&index=0!./shop.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.26.4@css-loader/index.js!../../../node_modules/_vue-loader@10.3.0@vue-loader/lib/style-rewriter.js?id=data-v-0aad944a&scoped=true!../../../node_modules/_vue-loader@10.3.0@vue-loader/lib/selector.js?type=styles&index=0!./shop.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 102 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Header4_vue__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Header4_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_Header4_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util__ = __webpack_require__(10);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+var navigator = weex.requireModule('navigator');
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data() {
+        return {};
+    },
+    components: {
+        'header5': __WEBPACK_IMPORTED_MODULE_0__components_Header4_vue___default.a
+    },
+    created() {},
+    methods: {
+
+        jumpWeb(_url) {
+            const url = this.$getConfig().bundleUrl;
+            navigator.push({
+                url: __WEBPACK_IMPORTED_MODULE_1__util__["a" /* default */].setBundleUrl(url, 'page/webview.js?weburl=' + _url),
+                animated: "true"
+            });
+        }
+    }
+});
+
+/***/ }),
+/* 103 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)();
+// imports
+
+
+// module
+exports.push([module.i, "\n.iconfont[data-v-3934e65e] {\n    font-family:iconfont;\n}\n.wrapper[data-v-3934e65e]{\n    background-color: #f4f4f4;\n}\n.cell-button[data-v-3934e65e]{\n    margin-bottom: 18px;\n}\n.header[data-v-3934e65e]{\n    height: 280px;\n}\n.h-ipx[data-v-3934e65e]{\n    height: 320px;\n}\n.header-bg[data-v-3934e65e]{\n    position: absolute;\n    top:0;\n    left: 0;\n    right: 0;\n    height: 320px;\n}\n.i-photo[data-v-3934e65e]{\n    position: absolute;\n    bottom:60px;\n    left: 30px;\n    height: 130px;\n    width: 130px;\n    border-radius: 130px;\n}\n.i-name[data-v-3934e65e]{\n    position: absolute;\n    bottom:120px;\n    left: 190px;\n    height: 50px;\n    width: 300px;\n    font-size: 38px;\n    color:#fff;\n}\n.b-tlt[data-v-3934e65e]{\n    position: absolute;\n    bottom: 70px;\n    left: 190px;\n    height: 40px;\n    width: 350px;\n    display: flex;\n    flex-direction: row;\n    flex-wrap: nowrap;\n}\n.i-tag[data-v-3934e65e]{\n    width: 30px;\n    height: 30px;\n    font-size: 24px;\n    padding-top: 2px;\n    margin-right: 6px;\n    border-radius: 4px;\n}\n.tag-e[data-v-3934e65e]{\n    width: 32px;\n    height: 32px;\n}\n.tag-v8[data-v-3934e65e]{\n    color:#fff;\n    background-color: #b29e75;\n    text-align: center;\n}\n.txt-tag[data-v-3934e65e]{\n    color:#b4a078;\n    flex: 1;\n    height: 40px;\n    font-size: 28px;\n    overflow: hidden;\n    lines:1;\n    text-overflow: ellipsis;\n}\n.b-qrcode[data-v-3934e65e]{\n    position: absolute;\n    bottom:80px;\n    right: 40px;\n    height: 80px;\n    width: 80px;\n    border-radius: 70px;\n    text-align: center;\n    font-size: 40px;\n    padding-top: 18px;\n    color:#fff;\n    background-color: rgba(255,255,255,.3);\n}\n.s-box[data-v-3934e65e]{\n    padding-left: 26px;\n    background-color: #fff;\n}\n.box-tlt[data-v-3934e65e]{\n    height: 94px;\n}\n.box-txt[data-v-3934e65e]{\n    font-size: 26px;\n    padding-top: 34px;\n    color:#333;\n}\n.i-box-in[data-v-3934e65e]{\n    position: absolute;\n    top:34px;\n    right: 30px;\n    color:#333;\n}\n.box-line[data-v-3934e65e]{\n    height: 132px;\n    display: flex;\n    padding-right: 30px;\n    flex-wrap: nowrap;\n    flex-direction: row;\n    justify-content: space-between;\n}\n.i-box-l[data-v-3934e65e]{\n    width: 130px;\n    height: 132px;\n}\n.i-box-icon[data-v-3934e65e]{\n    font-size: 50px;\n    text-align: center;\n    padding-top: 15px;\n    height:79px;\n    padding-bottom: 10px;\n    color:#666;\n}\n.i-box-tlt[data-v-3934e65e]{\n    font-size: 26px;\n    text-align: center;\n    color:#666;\n}\n.line-serve[data-v-3934e65e]{\n    padding-top: 20px;\n    height: 150px;\n}\n.border-bottom[data-v-3934e65e]{\n    border-bottom-width: 1px;\n    border-bottom-color: rgba(0,0,0,.15) ;\n}\n.i-c-orange[data-v-3934e65e]{\n    color:#ff744d;\n}\n.i-c-yellow[data-v-3934e65e]{\n    color:#f6a121;\n}\n.i-c-blue[data-v-3934e65e]{\n    color:#689de5;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 104 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/* styles */
+__webpack_require__(108)
+
+var Component = __webpack_require__(0)(
+  /* script */
+  null,
+  /* template */
+  __webpack_require__(107),
+  /* scopeId */
+  "data-v-49f7bcdc",
+  /* cssModules */
+  null
+)
+Component.options.__file = "/Users/steven/Desktop/git/weex-yanxuan/src/assets/components/Header4.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] Header4.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-49f7bcdc", Component.options)
+  } else {
+    hotAPI.reload("data-v-49f7bcdc", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 105 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(103);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("38107f53", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/_css-loader@0.26.4@css-loader/index.js!../../../node_modules/_vue-loader@10.3.0@vue-loader/lib/style-rewriter.js?id=data-v-3934e65e&scoped=true!../../../node_modules/_vue-loader@10.3.0@vue-loader/lib/selector.js?type=styles&index=0!./my.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.26.4@css-loader/index.js!../../../node_modules/_vue-loader@10.3.0@vue-loader/lib/style-rewriter.js?id=data-v-3934e65e&scoped=true!../../../node_modules/_vue-loader@10.3.0@vue-loader/lib/selector.js?type=styles&index=0!./my.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 106 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)();
+// imports
+
+
+// module
+exports.push([module.i, "\n.wrapper[data-v-49f7bcdc]{\n    position: fixed;\n    top: 0;\n    left: 0;right: 0;\n    height: 0px;\n    padding-top: 44px;\n    display:flex;\n    background-color: #000;\n    opacity: 0;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 107 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "wrapper"
+  })
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-49f7bcdc", module.exports)
+  }
+}
+
+/***/ }),
+/* 108 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(106);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(2)("7aaaaea0", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/_css-loader@0.26.4@css-loader/index.js!../../../node_modules/_vue-loader@10.3.0@vue-loader/lib/style-rewriter.js?id=data-v-49f7bcdc&scoped=true!../../../node_modules/_vue-loader@10.3.0@vue-loader/lib/selector.js?type=styles&index=0!./Header4.vue", function() {
+     var newContent = require("!!../../../node_modules/_css-loader@0.26.4@css-loader/index.js!../../../node_modules/_vue-loader@10.3.0@vue-loader/lib/style-rewriter.js?id=data-v-49f7bcdc&scoped=true!../../../node_modules/_vue-loader@10.3.0@vue-loader/lib/selector.js?type=styles&index=0!./Header4.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
